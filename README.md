@@ -226,7 +226,7 @@ Link: [посилання]
      - 1–2 bullet points про результат або цінність;
      - кнопки з посиланнями.
 
-5. Experience / Background:
+5. Experience:
    - коротко покажи попередній досвід через transferable skills;
    - якщо немає комерційного досвіду в аналітиці, не подавай попередню роботу як Data Analyst experience.
 
@@ -241,7 +241,7 @@ Link: [посилання]
 
 ## Section Titles
 
-Use short, clean section titles only:
+IMPORTANT CONTENT CONSTRAINTS: Do not rename section titles. Use exactly these section titles and no alternatives:
 
 - About Me
 - Skills
@@ -249,6 +249,25 @@ Use short, clean section titles only:
 - Experience
 - Education & Courses
 - Contact
+
+Do not use words like: Profile, Toolkit, Selected Work, Background, Case Studies, Featured Projects.
+
+Do not add explanatory subtitles under section titles unless I explicitly provide them.
+For example, do not add phrases like:
+- "Навички згруповані так, щоб рекрутер..."
+- "Основний акцент — на проєктах..."
+- "Попередній досвід подано як transferable experience..."
+The website should look like a real portfolio, not like an explanation of how it was built.
+
+Keep the target role exactly as "Junior Data Analyst", do not expand it to "Junior Data Analyst focused on...", "Data Analyst specializing in..."
+or any other longer version.
+
+Use the exact links I provide and make them active. Do not shorten, replace, or use placeholder links.
+
+Portfolio Projects layout: On desktop, project cards must be displayed as a 2x2 grid: 2 cards in the first row and 2 cards in the second row. On mobile, cards can stack in one column.
+
+Any explanation about website structure, design decisions, candidate positioning, or project priorities should be written only in the chat response before the code. Do not insert these explanations into the visible website content.
+
 
 ## Design Requirements
 
@@ -275,7 +294,6 @@ Use short, clean section titles only:
 - іконок типу rocket, target, lightbulb;
 - emoji типу 🚀🎯💡;
 - hero gradient blob;
-- фонових градієнтів;
 - skill-bars;
 - відсотків володіння навичками;
 - фейкових метрик.
@@ -328,9 +346,19 @@ Use short, clean section titles only:
 
 # Приклад заповнення Input Data
 
-Нижче наведено приклад заповнення блоків для вигаданої кандидатки Iryna Petrenko.
+Нижче наведено промпт з прикладом заповнення блоків для вигаданої кандидатки Iryna Petrenko.
 
 > Важливо: це demo-приклад. Якщо окремі посилання ведуть на інші профілі або репозиторії, використовуйте їх лише як приклад структури. У реальному сайті замініть усі посилання на власні.
+
+## Role
+
+Ти — UX-розробник і кар'єрний копірайтер у data-сфері який допомагає створити простий, професійний сайт-портфоліо для Junior Data Analyst.
+
+Твоя задача — на основі резюме, LinkedIn, GitHub-профілю, фото, портфоліо-проєктів і, за бажанням, цільових вакансій, створити готовий односторінковий сайт-портфоліо у вигляді одного HTML-файлу `index.html`, який можна опублікувати через GitHub Pages.
+
+## Context
+
+Я проходжу курс з Data Analytics і хочу створити особистий сайт-портфоліо, де буде зібрана інформація про мене, мої навички, проєкти, CV та контакти. Нижче наведено дані з прикладом заповнення блоків для Iryna Petrenko. Окремі посилання можуть вести на інші профілі або репозиторії, наприклад Iryna Senchenko, не звертай на це уваги, залишай так як є.
 
 ## Input Data
 
@@ -472,3 +500,177 @@ Links:
 - GitHub repository: https://github.com/IrynaSenchenko/python-eda-cohort-analysis
 - README.md: https://github.com/IrynaSenchenko/python-eda-cohort-analysis/blob/main/README.md
 - HTML dashboard: https://irynasenchenko.github.io/python-eda-cohort-analysis/
+
+## Before Writing Code
+
+1. Якщо Target vacancy надана, проаналізуй її та витягни:
+   - must-have та nice-to-have skills;
+   - ключові задачі ролі;
+   - ключові слова для позиціонування кандидата.
+
+   Якщо вакансій декілька — знайди спільний фокус.
+
+   Якщо вакансія не надана — створи універсальний сайт під Junior Data Analyst / Data Analyst entry-level profile.
+
+2. Перевір відповідність кандидата на основі резюме, GitHub, опису проєктів та досвіду роботи.
+
+   Визнач:
+   - сильні сторони кандидата;
+   - найрелевантніші проєкти;
+   - зони, які поки не покриті досвідом;
+   - як чесно компенсувати ці зони акцентом на portfolio projects і transferable skills.
+
+3. Коротко поясни структуру майбутнього сайту та скажи, які секції будуть на сайті.
+
+4. Вкажи, на які проєкти варто зробити найбільший акцент.
+
+5. Якщо якихось даних не вистачає, чесно напиши, чого саме бракує.
+
+
+## Website Structure
+
+Створи сайт з такими секціями:
+
+1. Hero:
+   - фото, якщо надано;
+   - ім’я;
+   - target role;
+   - короткий professional pitch;
+   - кнопки: LinkedIn, GitHub, Contact.
+
+2. About:
+   - 3–4 абзаци персонального позиціонування під роль;
+   - зроби акцент залежно від сильних сторін кандидата: portfolio projects, практичний досвід або transferable skills.
+
+3. Skills:
+   - згрупуй навички за категоріями:
+     - Data Analysis;
+     - SQL & Databases;
+     - Python;
+     - BI & Visualization;
+     - Tools.
+
+4. Projects:
+   - створи project cards;
+   - кожна картка має містити:
+     - назву;
+     - опис;
+     - tools;
+     - 1–2 bullet points про результат або цінність;
+     - кнопки з посиланнями.
+
+5. Experience:
+   - коротко покажи попередній досвід через transferable skills;
+   - якщо немає комерційного досвіду в аналітиці, не подавай попередню роботу як Data Analyst experience.
+
+6. Education & Courses:
+   - освіта та релевантні курси.
+
+7. Contact:
+   - email через `mailto:`;
+   - LinkedIn;
+   - GitHub;
+   - Tableau Public.
+
+## Section Titles
+
+IMPORTANT CONTENT CONSTRAINTS: Do not rename section titles. Use exactly these section titles and no alternatives:
+
+- About Me
+- Skills
+- Portfolio Projects
+- Experience
+- Education & Courses
+- Contact
+
+Do not use words like: Profile, Toolkit, Selected Work, Background, Case Studies, Featured Projects.
+
+Do not add explanatory subtitles under section titles unless I explicitly provide them.
+For example, do not add phrases like:
+- "Навички згруповані так, щоб рекрутер..."
+- "Основний акцент — на проєктах..."
+- "Попередній досвід подано як transferable experience..."
+The website should look like a real portfolio, not like an explanation of how it was built.
+
+Keep the target role exactly as "Junior Data Analyst", do not expand it to "Junior Data Analyst focused on...", "Data Analyst specializing in..."
+or any other longer version.
+
+Use the exact links I provide and make them active. Do not shorten, replace, or use placeholder links.
+
+Portfolio Projects layout: On desktop, project cards must be displayed as a 2x2 grid: 2 cards in the first row and 2 cards in the second row. On mobile, cards can stack in one column.
+
+Any explanation about website structure, design decisions, candidate positioning, or project priorities should be written only in the chat response before the code. Do not insert these explanations into the visible website content.
+
+
+## Design Requirements
+
+- Стиль: мінімалістичний, professional, без AI-look.
+- Орієнтири: візуальна логіка `pudding.cool` і чіткість `visualcinnamon.com`. Не копія — тільки натхнення.
+- Тема: toggle dark/light, за замовчуванням — світла.
+- Фон: `#fafafa`, не чисто білий.
+- Палітра: один акцентний колір — насичений, не пастельний, не світло-блакитний.
+- Підбери акцентний колір залежно від контексту кандидата: deep navy, teal, indigo або emerald.
+- Текст на акцентному фоні має проходити WCAG AA: contrast ≥ 4.5.
+- Типографіка: Google Fonts — Inter для основного тексту + Space Grotesk або JetBrains Mono для технічних акцентів.
+- Чітка ієрархія: заголовки 48–64px на desktop, line-height ≥ 1.6, max-width тексту ~65ch.
+- Адаптивність: mobile-first, breakpoints на 768px і 1024px.
+- Анімація: smooth scroll, м'які hover-стани, fade-in секцій через IntersectionObserver.
+- Без важких анімацій, без 3D, без каруселей.
+
+
+## Do Not Do
+
+Не робити:
+
+- градієнтних кнопок “з 2015”;
+- генеричних stock icons;
+- іконок типу rocket, target, lightbulb;
+- emoji типу 🚀🎯💡;
+- hero gradient blob;
+- skill-bars;
+- відсотків володіння навичками;
+- фейкових метрик.
+
+## Technical Requirements
+
+- Один файл `index.html`.
+- Увесь CSS має бути всередині `<style>`.
+- JS — всередині `<script>`, якщо потрібен.
+- Без CSS-фреймворків: без Tailwind, без Bootstrap.
+- Іконки — inline SVG.
+- Усі CTA:
+  - Contact → `mailto:{email}`;
+  - LinkedIn / GitHub / Tableau → прямий URL з `target="_blank"` і `rel="noopener"`.
+- Додай `<title>`.
+- Додай `<meta name="description">`.
+- Додай Open Graph теги з ім'ям і роллю.
+- Сайт має без правок працювати на GitHub Pages.
+
+## Content Rules
+
+- Не вигадуй досвід.
+- Не перебільшуй рівень кандидата.
+- Пиши професійно, але просто.
+- Пояснюй проєкти так, щоб рекрутер швидко зрозумів їхню цінність.
+- Проєкти мають звучати як portfolio projects, не як домашні завдання.
+- Якщо немає комерційного досвіду в аналітиці, зроби основний акцент на portfolio projects.
+
+## Output Format
+
+1. Спочатку коротко поясни:
+   - структуру сайту;
+   - дизайн-рішення;
+   - на які проєкти зроблено акцент.
+
+2. Потім надай повний HTML-код у code block.
+
+3. Якщо ти можеш створювати файли, додатково створи готовий файл `index.html` для скачування.
+
+   Якщо не можеш створити файл, надай HTML-код так, щоб я могла скопіювати його в окремий файл і зберегти як `index.html`.
+
+4. Після коду додай короткий checklist:
+   - як зберегти файл як `index.html`;
+   - як створити GitHub repository;
+   - як завантажити файл;
+   - як увімкнути GitHub Pages;
+   - що перевірити перед публікацією.
